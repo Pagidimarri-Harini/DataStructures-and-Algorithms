@@ -11,4 +11,4 @@ int findMin(vector<int>& nums) {
             }
         }
         return ans;
-}
+ }
