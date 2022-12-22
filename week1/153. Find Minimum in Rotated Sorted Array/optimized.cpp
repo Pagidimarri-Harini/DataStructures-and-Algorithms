@@ -1,14 +1,14 @@
 int findMin(vector<int>& nums) {
         int start = 0;
         int end = nums.size()-1;
-        int  ans,mid;
-        while(start < end){
-            mid = start + (end - start)/2;
-            if(nums[mid] < nums[end]){
-                end = mid;
+        int  ans;
+        while(start < nums.size()){
+            if(nums[start] <= nums[end]){
+                ans = nums[start];
+                break;
             }else{
-                start = mid + 1;
+                start += 1;
             }
         }
-        return nums[start];
+        return ans;
 }
