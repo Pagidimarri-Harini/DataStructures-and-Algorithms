@@ -5,4 +5,4 @@ int findMin(vector<int>& nums) {
 
         }
         return minele;
-}
+  }
