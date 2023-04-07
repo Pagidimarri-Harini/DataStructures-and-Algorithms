@@ -1,4 +1,4 @@
-//Topological sort using bfs is called kahn's algorithm
+//Topological sort using indegree is called kahn's algorithm(bfs)
 class Solution
 {
 	public:
