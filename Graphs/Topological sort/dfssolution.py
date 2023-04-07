@@ -1,3 +1,5 @@
+#topological sort- linear ordering of vertices such that if there is an edge btwn u and v then u appears before v in the ordering
+#topological sort is only applicable for directed acyclic graph(DAG)
 from queue import LifoQueue
 class Solution:
     def dfs(self, node, visited, adj,stack):
