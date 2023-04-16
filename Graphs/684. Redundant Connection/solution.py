@@ -2,7 +2,6 @@ class DisjointSet:
     def __init__(self,n):
         self.parent = [i for i in range(n)]
         self.size = [1]*n
-        self.count = 0
     def findParent(self, node):
         if self.parent[node] == node:
             return node
@@ -12,7 +11,7 @@ class DisjointSet:
         p1 = self.findParent(n1)
         p2 = self.findParent(n2)
         if p1 == p2:
-            self.count += 1
+            return
         elif self.size[p1] < self.size[p2]:
             self.parent[p1] = self.parent[p2]
             self.size[p2] += self.size[p1]
