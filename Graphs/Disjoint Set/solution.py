@@ -1,3 +1,4 @@
+#Union by rank
 class DisjointSet:
     def __init__(self, n):
         self.parent = [i for i in range(n)]
