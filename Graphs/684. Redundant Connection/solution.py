@@ -17,7 +17,7 @@ class DisjointSet:
             self.size[p2] += self.size[p1]
         else:
             self.parent[p2] = self.parent[p1]
-            self.size[p2] += self.size[p1]
+            self.size[p1] += self.size[p2]
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         ds = DisjointSet(len(edges))
